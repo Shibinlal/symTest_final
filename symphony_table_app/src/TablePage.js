@@ -14,8 +14,6 @@ const TablePage = () => {
 
   //map recieved data to new object array
   const mapReceivedTableData = (data = receivedData, delim = "|") => {
-    debugger;
-    console.log("data, delim", delim);
     let tableArr = [];
 
     data.map((item) => {
@@ -41,8 +39,6 @@ const TablePage = () => {
   // number filter
   const numberFilter = (e) => {
     e.preventDefault();
-    debugger;
-    console.log("e.target.value", e.target.value);
     e.target.value === 0 ? setLines(2) : setLines(e.target.value);
   };
   // update upon file change
@@ -67,7 +63,6 @@ const TablePage = () => {
       mapReceivedTableData(res.data);
       setMessage(`uploaded!!!. ${res.data.length} lines of data uploaded`);
     } catch (err) {
-      console.log("error");
       if (err.response.status === 500) {
         setMessage("There was a problem with the server");
       } else {
