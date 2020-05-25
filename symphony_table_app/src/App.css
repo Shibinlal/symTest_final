@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.filter_wrap {
+  margin: 2rem auto;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+}
+.filter_wrap span {
+  margin: 0 2rem;
+}
+.filter_wrap span input {
+  margin-left: 0.6rem;
+}
+.table_container {
+  list-style: none;
+  font-size: 0.8rem;
+  /* margin-top: 4rem; */
+  border: 1px solid grey;
+  padding: 0;
+  width: 70%;
+  margin: 4rem auto;
+}
+.table_column {
+  margin: 0 1rem;
+}
+.table_row {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+li:last-child {
+  border-bottom: none;
+}
+.upload_form {
+  padding: 0.2rem;
+}
+.upload_field {
+  background-color: grey;
+  padding: 0.32rem;
+  color: white;
+}
+.upload_button {
+  font-size: 0.6rem;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  background-color: #468b02;
+}
+.upload_button:hover {
+  background-color: white;
+  color: black;
+  border: 0.1rem solid #468b02;
+  padding: 0.4rem;
+}
+.alert {
+  position: absolute;
+  top: 25%;
+  /* left: 40%; */
+  padding: 0.5rem 2rem;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 0.7rem;
+  width: 83%;
+}
+.alert_close {
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
